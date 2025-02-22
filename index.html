@@ -1,0 +1,74 @@
+<!--  project_root/index.html  -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>میدون - نیازمندی‌های خرید و فروش</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo">
+      <a href="index.html" title="میدون">
+        <i class="fas fa-store"></i>
+        میدون
+      </a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active" title="صفحه اصلی"><i class="fas fa-home"></i> خانه</a>
+      <a href="categories.html" title="دسته‌بندی‌ها"><i class="fas fa-list"></i> دسته‌بندی‌ها</a>
+      <a href="about.html" title="درباره ما"><i class="fas fa-info-circle"></i> درباره ما</a>
+      <a href="contact.html" title="تماس با ما"><i class="fas fa-envelope"></i> تماس با ما</a>
+      <a href="login.html" title="ورود / ثبت نام"><i class="fas fa-user"></i> ورود / ثبت نام</a>
+    </nav>
+    <div class="mobile-menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+    <div class="search-bar">
+      <form action="search.html" method="POST" role="search" class="search-form">
+        <input type="text" name="q" placeholder="جستجو در میدون..." aria-label="جستجو" id="search-input">
+        <button type="submit" aria-label="جستجوی پیشرفته"><i class="fas fa-search"></i></button>
+      </form>
+  </div>
+
+  <main class="container">
+    <section class="ad-grid" aria-label="آگهی‌ها">
+      <!--  آگهی‌ها اینجا قرار می‌گیرند -->
+      <div class="ad-card">
+          <a href="ad-details.html" class="ad-link">
+            <img src="assets/images/placeholder.jpg" alt="تصویر آگهی" class="ad-image">
+            <h3 class="ad-title">عنوان آگهی</h3>
+            <p class="ad-price">قیمت</p>
+            <p class="ad-location">مکان</p>
+              <p class="ad-description">توضیحات مختصر...</p>
+          </a>
+          <div class="ad-actions">
+            <button class="ad-action-btn" title="گزارش تخلف" aria-label="گزارش این آگهی"><i class="fas fa-flag"></i></button>
+             <button class="ad-action-btn" title="پسندیدن" aria-label="پسندیدن آگهی"><i class="fas fa-heart"></i></button>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><i class="fas fa-copyright"></i> تمامی حقوق محفوظ است.</p>
+      <div class="social-links">
+        <a href="#" title="توییتر" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="اینستاگرام" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="فیسبوک" aria-label="فیسبوک"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

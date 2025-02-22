@@ -1,0 +1,146 @@
+<!-- project_root/ad-details.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>میدون - جزئیات آگهی</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ad-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo">
+          <a href="index.html" title="میدون">
+            <i class="fas fa-store"></i>
+            میدون
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" title="صفحه اصلی"><i class="fas fa-home"></i> خانه</a>
+          <a href="categories.html" title="دسته‌بندی‌ها"><i class="fas fa-list"></i> دسته‌بندی‌ها</a>
+          <a href="about.html" title="درباره ما"><i class="fas fa-info-circle"></i> درباره ما</a>
+          <a href="contact.html" title="تماس با ما"><i class="fas fa-envelope"></i> تماس با ما</a>
+          <a href="login.html" title="ورود / ثبت نام"><i class="fas fa-user"></i> ورود / ثبت نام</a>
+        </nav>
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <div class="search-bar">
+        <form action="search.html" method="POST" role="search" class="search-form">
+          <input type="text" name="q" placeholder="جستجو در میدون..." aria-label="جستجو" id="search-input">
+          <button type="submit" aria-label="جستجوی پیشرفته"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <main class="container">
+        <section class="ad-details" aria-labelledby="ad-title">
+            <h1 id="ad-title">عنوان آگهی</h1>
+
+            <div class="ad-content">
+                <div class="ad-images">
+                    <img src="assets/images/placeholder.jpg" alt="تصویر اصلی آگهی" class="main-image">
+                    <div class="thumbnail-images">
+                        <!--  تصاویر بندانگشتی اینجا قرار می‌گیرند  -->
+                        <img src="assets/images/placeholder-thumb1.jpg" alt="تصویر بندانگشتی 1" class="thumbnail">
+                        <img src="assets/images/placeholder-thumb2.jpg" alt="تصویر بندانگشتی 2" class="thumbnail">
+
+                    </div>
+                </div>
+                <div class="ad-info">
+                    <p class="ad-price"><i class="fas fa-tag"></i> قیمت: 1,000,000 تومان</p>
+                    <p class="ad-category"><i class="fas fa-folder-open"></i> دسته‌بندی:  <a href="#">صنایع دستی</a> > <a href="#">فرش</a></p>
+                    <p class="ad-location"><i class="fas fa-map-marker-alt"></i> مکان: تهران، خیابان ولیعصر</p>
+                    <p class="ad-date"><i class="fas fa-calendar-alt"></i> تاریخ انتشار: 1402/02/28</p>
+                    <p class="ad-description">
+                        <i class="fas fa-info-circle"></i>
+                        توضیحات:<br>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+
+                    <div class="ad-actions">
+                         <button class="btn btn-primary contact-seller-btn" data-modal-target="contact-seller-modal"><i class="fas fa-envelope"></i> تماس با فروشنده</button>
+                        <button class="ad-action-btn report-ad-btn" data-modal-target="report-ad-modal" title="گزارش تخلف" aria-label="گزارش این آگهی"><i class="fas fa-flag"></i></button>
+                        <button class="ad-action-btn" title="پسندیدن" aria-label="پسندیدن آگهی"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+           <!--  مودال تماس با فروشنده  -->
+        <div class="modal" id="contact-seller-modal">
+            <div class="modal-content">
+                <span class="close-modal" data-modal-close="contact-seller-modal">&times;</span>
+                <h2>تماس با فروشنده</h2>
+                <form action="send-message.php" method="POST" id="contact-seller-form">
+                    <div class="form-group">
+                        <label for="contact-name">نام و نام خانوادگی:</label>
+                        <input type="text" id="contact-name" name="contact-name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">ایمیل:</label>
+                        <input type="email" id="contact-email" name="contact-email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">پیام:</label>
+                        <!-- project_root/ad-details.html -->
+<!-- ... (ادامه از کامنت قبلی) ... -->
+                        <textarea id="contact-message" name="contact-message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">ارسال پیام</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--  مودال گزارش تخلف  -->
+        <div class="modal" id="report-ad-modal">
+            <div class="modal-content">
+                <span class="close-modal" data-modal-close="report-ad-modal">&times;</span>
+                <h2>گزارش تخلف</h2>
+                <form action="report-ad.php" method="POST" id="report-ad-form">
+                    <div class="form-group">
+                        <label for="report-reason">دلیل گزارش:</label>
+                        <select id="report-reason" name="report-reason" required aria-required="true">
+                            <option value="">انتخاب کنید...</option>
+                            <option value="inappropriate-content">محتوای نامناسب</option>
+                            <option value="fraud">کلاهبرداری</option>
+                            <option value="spam">هرزنامه</option>
+                            <option value="other">سایر</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="report-description">توضیحات بیشتر (اختیاری):</label>
+                        <textarea id="report-description" name="report-description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">ثبت گزارش</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+        <p><i class="fas fa-copyright"></i> تمامی حقوق محفوظ است.</p>
+        <div class="social-links">
+            <a href="#" title="توییتر" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="اینستاگرام" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="فیسبوک" aria-label="فیسبوک"><i class="fab fa-facebook"></i></a>
+        </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script> <!--  برای اعتبارسنجی فرم‌ها  -->
+    <script src="js/ad-details.js"></script> <!--  برای مودال‌ها  -->
+</body>
+</html>

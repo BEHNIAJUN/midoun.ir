@@ -1,0 +1,88 @@
+<!-- project_root/about.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>میدون - درباره ما</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo">
+      <a href="index.html" title="میدون">
+        <i class="fas fa-store"></i>
+        میدون
+      </a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" title="صفحه اصلی"><i class="fas fa-home"></i> خانه</a>
+      <a href="categories.html" title="دسته‌بندی‌ها"><i class="fas fa-list"></i> دسته‌بندی‌ها</a>
+      <a href="about.html" class="active" title="درباره ما"><i class="fas fa-info-circle"></i> درباره ما</a>
+      <a href="contact.html" title="تماس با ما"><i class="fas fa-envelope"></i> تماس با ما</a>
+      <a href="login.html" title="ورود / ثبت نام"><i class="fas fa-user"></i> ورود / ثبت نام</a>
+    </nav>
+    <div class="mobile-menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+    <div class="search-bar">
+      <form action="search.html" method="POST" role="search" class="search-form">
+        <input type="text" name="q" placeholder="جستجو در میدون..." aria-label="جستجو" id="search-input">
+        <button type="submit" aria-label="جستجوی پیشرفته"><i class="fas fa-search"></i></button>
+      </form>
+  </div>
+
+  <main class="container">
+        <section class="about-us" aria-labelledby="about-heading">
+          <h1 id="about-heading">درباره میدون</h1>
+          <div class="about-content">
+            <p>
+                میدون، پلتفرمی برای معرفی و یافتن آگهی‌های خرید و فروش کالا و خدمات، با تمرکز بر سادگی، سرعت و امنیت.
+            </p>
+            <p>
+                هدف ما ایجاد بستری کاربرپسند است که در آن کاربران بتوانند به راحتی آگهی‌های خود را ثبت کرده و یا کالای مورد نظر خود را پیدا کنند.
+            </p>
+            <p>
+                ما به ارزش‌هایی چون شفافیت، صداقت و احترام به حقوق کاربران پایبندیم.
+            </p>
+            <h2>تیم ما</h2>
+            <p>
+                تیم میدون متشکل از متخصصان جوان و باانگیزه در زمینه‌های مختلف از جمله توسعه وب، طراحی رابط کاربری، بازاریابی و ... است.
+            </p>
+            <h2>چشم‌انداز</h2>
+            <p>
+                تبدیل شدن به بزرگترین و معتبرترین مرجع آگهی‌های خرید و فروش در ایران.
+            </p>
+
+            <h2>ارزش‌های ما</h2>
+            <ul>
+                <li><strong>کاربرمحوری:</strong>  تمرکز بر نیازها و خواسته‌های کاربران.</li>
+                <li><strong>نوآوری:</strong>  بهره‌گیری از جدیدترین فناوری‌ها و ایده‌ها.</li>
+                <li><strong>کیفیت:</strong>  ارائه خدمات با بالاترین سطح کیفیت.</li>
+                <li><strong>شفافیت:</strong>  ایجاد بستری شفاف و قابل اعتماد.</li>
+            </ul>
+          </div>
+        </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><i class="fas fa-copyright"></i> تمامی حقوق محفوظ است.</p>
+      <div class="social-links">
+        <a href="#" title="توییتر" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="اینستاگرام" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="فیسبوک" aria-label="فیسبوک"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

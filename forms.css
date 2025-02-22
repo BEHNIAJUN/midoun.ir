@@ -1,0 +1,112 @@
+/* project_root/css/forms.css */
+
+/*  استایل‌های کلی فرم‌ها  */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit; /*  فونت از بادی ارث‌بری شود  */
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group textarea:focus {
+  border-color: #0E3BF0;
+  outline: none; /*  حذف outline پیش‌فرض مرورگر  */
+}
+
+.form-group textarea {
+  resize: vertical; /*  کاربر بتواند ارتفاع را تغییر دهد  */
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center; /*  برای وسط‌چین کردن متن  */
+}
+
+.btn-primary {
+  background-color: #F1C40F;
+  color: #2C3E50;
+}
+
+.btn-primary:hover {
+  background-color: #0E3BF0;
+  color: #F1C40F;
+}
+
+/*  استایل‌های مخصوص فرم تماس  */
+.contact-us {
+  padding: 2rem 0;
+}
+
+.contact-us h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #F1C40F;
+  text-align: center;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  background-color: #344
+/* project_root/css/forms.css */
+
+/* ... (ادامه از کامنت قبلی) ... */
+
+.contact-form {
+  background-color: #34495E;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /*  حداکثر عرض فرم  */
+  margin: 0 auto; /*  فرم در وسط قرار بگیرد  */
+}
+
+.contact-info {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f1c40f;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+.contact-info p i{
+    margin-left: 0.5rem;
+    color: #f1c40f;
+}

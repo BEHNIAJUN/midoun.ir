@@ -1,0 +1,50 @@
+/* project_root/css/categories.css */
+
+/*  استایل‌های مخصوص صفحه دسته‌بندی  */
+
+.categories-list {
+  padding: 2rem 0;
+}
+
+.categories-list h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #F1C40F;
+  text-align: center;
+}
+
+.category-group {
+  margin-bottom: 2rem;
+}
+
+.category-group-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #F1C40F;
+  color: #F1C40F;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*  واکنش‌گرا  */
+  gap: 1rem;
+}
+
+.category-list li {
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.category-list a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.category-list li:hover {
+  background-color: #2980b9;
+}

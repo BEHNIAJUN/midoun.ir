@@ -1,0 +1,122 @@
+<!-- project_root/contact.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>میدون - تماس با ما</title>
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css"> <!--  فایل جداگانه برای استایل فرم‌ها  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo">
+      <a href="index.html" title="میدون">
+        <i class="fas fa-store"></i>
+        میدون
+      </a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" title="صفحه اصلی"><i class="fas fa-home"></i> خانه</a>
+      <a href="categories.html" title="دسته‌ب
+<!-- project_root/contact.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>میدون - تماس با ما</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css"> <!--  فایل جداگانه برای استایل فرم‌ها  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo">
+      <a href="index.html" title="میدون">
+        <i class="fas fa-store"></i>
+        میدون
+      </a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" title="صفحه اصلی"><i class="fas fa-home"></i> خانه</a>
+      <a href="categories.html" title="دسته‌بندی‌ها"><i class="fas fa-list"></i> دسته‌بندی‌ها</a>
+      <a href="about.html" title="درباره ما"><i class="fas fa-info-circle"></i> درباره ما</a>
+      <a href="contact.html" class="active" title="تماس با ما"><i class="fas fa-envelope"></i> تماس با ما</a>
+      <a href="login.html" title="ورود / ثبت نام"><i class="fas fa-user"></i> ورود / ثبت نام</a>
+    </nav>
+    <div class="mobile-menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+    <div class="search-bar">
+      <form action="search.html" method="POST" role="search" class="search-form">
+        <input type="text" name="q" placeholder="جستجو در میدون..." aria-label="جستجو" id="search-input">
+        <button type="submit" aria-label="جستجوی پیشرفته"><i class="fas fa-search"></i></button>
+      </form>
+  </div>
+
+  <main class="container">
+    <section class="contact-us" aria-labelledby="contact-heading">
+      <h1 id="contact-heading">تماس با ما</h1>
+      <p class="contact-intro">
+        برای ارتباط با تیم پشتیبانی میدون، می‌توانید از طریق فرم زیر اقدام کنید.
+      </p>
+
+      <form action="send-message.php" method="POST" class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name">نام و نام خانوادگی:</label>
+          <input type="text" id="name" name="name" required aria-required="true" placeholder="نام شما">
+        </div>
+        <div class="form-group">
+          <label for="email">ایمیل:</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="ایمیل شما">
+        </div>
+        <div class="form-group">
+          <label for="subject">موضوع:</label>
+          <input type="text" id="subject" name="subject" required aria-required="true" placeholder="موضوع پیام">
+        </div>
+        <div class="form-group">
+          <label for="message">متن پیام:</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="متن پیام شما"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">ارسال پیام</button>
+        </div>
+      </form>
+
+       <div class="contact-info">
+        <h2>اطلاعات تماس</h2>
+        <p><i class="fas fa-envelope"></i> ایمیل: info@meydoon.com</p>
+        <p><i class="fas fa-phone"></i> تلفن: 021-12345678</p>
+        <p><i class="fas fa-map-marker-alt"></i> آدرس: تهران، خیابان ...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><i class="fas fa-copyright"></i> تمامی حقوق محفوظ است.</p>
+      <div class="social-links">
+        <a href="#" title="توییتر" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="اینستاگرام" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="فیسبوک" aria-label="فیسبوک"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script> <!--  اسکریپت‌های مربوط به فرم  -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!-- project_root/categories.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>میدون - دسته‌بندی‌ها</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo">
+      <a href="index.html" title="میدون">
+        <i class="fas fa-store"></i>
+        میدون
+      </a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" title="صفحه اصلی"><i class="fas fa-home"></i> خانه</a>
+      <a href="categories.html" class="active" title="دسته‌بندی‌ها"><i class="fas fa-list"></i> دسته‌بندی‌ها</a>
+      <a href="about.html" title="درباره ما"><i class="fas fa-info-circle"></i> درباره ما</a>
+      <a href="contact.html" title="تماس با ما"><i class="fas fa-envelope"></i> تماس با ما</a>
+      <a href="login.html" title="ورود / ثبت نام"><i class="fas fa-user"></i> ورود / ثبت نام</a>
+    </nav>
+    <div class="mobile-menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+    <div class="search-bar">
+      <form action="search.html" method="POST" role="search" class="search-form">
+        <input type="text" name="q" placeholder="جستجو در میدون..." aria-label="جستجو" id="search-input">
+        <button type="submit" aria-label="جستجوی پیشرفته"><i class="fas fa-search"></i></button>
+      </form>
+  </div>
+
+  <main class="container">
+        <section class="categories-list" aria-labelledby="categories-heading">
+          <h1 id="categories-heading">دسته‌بندی‌ها</h1>
+          <div class="category-group">
+            <h2 class="category-group-title">صنایع دستی</h2>
+            <ul class="category-list">
+              <li><a href="search.html?category=handicrafts&subcategory=carpet">فرش</a></li>
+              <li><a href="search.html?category=handicrafts&subcategory=pottery">سفال</a></li>
+              <li><a href="search.html?category=handicrafts&subcategory=woodcarving">منبت</a></li>
+              <li><a href="search.html?category=handicrafts&subcategory=metalwork">فلزات</a></li>
+              <li><a href="search.html?category=handicrafts&subcategory=jewelry">جواهرات</a></li>
+              <li><a href="search.html?category=handicrafts&subcategory=textile">بافندگی و نساجی</a></li>
+            </ul>
+          </div>
+
+          <div class="category-group">
+            <h2 class="category-group-title">محصولات غذایی</h2>
+            <ul class="category-list">
+              <li><a href="search.html?category=food&subcategory=agricultural">کشاورزی</a></li>
+              <li><a href="search.html?category=food&subcategory=livestock">محصولات دام و طیور</a></li>
+              <li><a href="search.html?category=food&subcategory=dairy">لبنیات</a></li>
+                <li><a href="search.html?category=food&subcategory=processed">فرآوری شده</a></li>
+            </ul>
+          </div>
+
+          <div class="category-group">
+            <h2 class="category-group-title">هنرهای تجسمی</h2>
+            <ul class="category-list">
+              <li><a href="search.html?category=visualarts&subcategory=painting">نقاشی</a></li>
+              <li><a href="search.html?category=visualarts&subcategory=sculpture">مجسمه‌سازی</a></li>
+              <li><a href="search.html?category=visualarts&subcategory=graphics">گرافیک</a></li>
+                <li><a href="search.html?category=visualarts&subcategory=photography">عکاسی</a></li>
+            </ul>
+          </div>
+
+            <div class="category-group">
+            <h2 class="category-group-title">خدمات</h2>
+            <ul class="category-list">
+              <li><a href="search.html?category=services&subcategory=education">آموزش</a></li>
+              <li><a href="search.html?category=services&subcategory=design">طراحی</a></li>
+              <li><a href="search.html?category=services&subcategory=events">برگزاری رویداد</a></li>
+              <li><a href="search.html?category=services&subcategory=processing">تبدیلی محصولات</a></li>
+            </ul>
+          </div>
+        </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><i class="fas fa-copyright"></i> تمامی حقوق محفوظ است.</p>
+      <div class="social-links">
+        <a href="#" title="توییتر" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="اینستاگرام" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="فیسبوک" aria-label="فیسبوک"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

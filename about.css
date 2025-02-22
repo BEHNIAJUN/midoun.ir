@@ -1,0 +1,39 @@
+/* project_root/css/about.css */
+
+.about-us {
+    padding: 2rem 0;
+  }
+
+  .about-us h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #F1C40F;
+    text-align: center;
+  }
+  .about-us h2{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #F1C40F;
+  }
+
+  .about-content {
+    background-color: #34495e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  .about-content ul{
+    list-style: disc;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .about-content li strong{
+    color: #f1c40f;
+  }

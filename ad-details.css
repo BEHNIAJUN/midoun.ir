@@ -1,0 +1,161 @@
+/* project_root/css/ad-details.css */
+
+.ad-details {
+  padding: 2rem 0;
+}
+
+.ad-details h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #F1C40F;
+  text-align: center;
+}
+
+.ad-content {
+  display: grid;
+  grid-template-columns: 1fr; /*  ابتدا یک ستونه  */
+  gap: 2rem;
+  background-color: #34495E;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ad-images {
+  text-align: center; /*  تصاویر وسط‌چین شوند  */
+}
+
+.main-image {
+  width: 100%;
+  max-width: 500px; /*  حداکثر عرض تصویر اصلی  */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.thumbnail-images {
+  display: flex;
+  justify-content: center; /*  تصاویر بندانگشتی وسط‌چین  */
+  gap: 0.5rem;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  border-color: #F1C40F;
+}
+
+.ad-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ad-info > p {
+  margin-bottom: 0.8rem;
+    text-align: right;
+}
+.ad-info > p i{
+    margin-left: 0.5rem;
+    color: #f1c40f
+}
+
+.ad-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.ad-category,
+.ad-location,
+.ad-date {
+  color: #95a5a6;
+}
+.ad-category a, .ad-location a{
+    color: inherit;
+    transition: color 0.2s ease;
+}
+.ad-category a:hover, .ad-location a:hover{
+    color: #f1c40f;
+    text-decoration: underline;
+}
+
+.ad-description {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.ad-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-seller-btn {
+  flex-grow: 1; /*  دکمه تماس با فروشنده فضای بیشتری بگیرد  */
+}
+
+/*  استایل‌های مودال  */
+.modal {
+    display: none; /*  به طور پیش‌فرض مخفی باشد  */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /*  پس‌زمینه نیمه‌شفاف  */
+    z-index: 1000; /*  بالای بقیه المان‌ها  */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #34495e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%; /*  حداکثر عرض مودال  */
+    position: relative; /*  برای قرارگیری دکمه بستن  */
+     width: 500px; /*  عرض ثابت برای مودال  */
+}
+.modal-content h2{
+    color: #f1c40f;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+.close-modal:hover{
+    color: #f1c40f;
+}
+
+/*  مدیا کوئری برای دو ستونه شدن در صفحه‌های بزرگتر  */
+@media (min-width: 768px) {
+  .ad-content {
+    grid-template-columns: 1fr 1fr; /*  دو ستونه  */
+  }
+  .ad-images{
+    order: 2; /* جابجایی تصویر و اطلاعات در دسکتاپ */
+  }
+  .ad-info{
+    order: 1;
+  }
+}

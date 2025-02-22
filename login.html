@@ -1,0 +1,132 @@
+<!-- project_root/login.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>میدون - ورود / ثبت نام</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo">
+          <a href="index.html" title="میدون">
+            <i class="fas fa-store"></i>
+            میدون
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" title="صفحه اصلی"><i class="fas fa-home"></i> خانه</a>
+          <a href="categories.html" title="دسته‌بندی‌ها"><i class="fas fa-list"></i> دسته‌بندی‌ها</a>
+          <a href="about.html" title="درباره ما"><i class="fas fa-info-circle"></i> درباره ما</a>
+          <a href="contact.html" title="تماس با ما"><i class="fas fa-envelope"></i> تماس با ما</a>
+          <a href="login.html" class="active"  title="ورود / ثبت نام"><i class="fas fa-user"></i> ورود / ثبت نام</a>
+        </nav>
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+      <div class="search-bar">
+        <form action="search.html" method="POST" role="search" class="search-form">
+          <input type="text" name="q" placeholder="جستجو در میدون..." aria-label="جستجو" id="search-input">
+          <button type="submit" aria-label="جستجوی پیشرفته"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <main class="container">
+        <section class="login-register" aria-labelledby="login-register-heading">
+            <h1 id="login-register-heading">ورود / ثبت نام</h1>
+
+            <div class="form-container">
+                <!-- فرم ورود -->
+                <div class="login-form">
+                    <h2>ورود</h2>
+                    <form action="login.php" method="POST" id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">ایمیل یا نام کاربری:</label>
+                            <input type="text" id="login-email" name="login-email" required aria-required="true" placeholder="ایمیل یا نام کاربری شما">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">رمز عبور:</label>
+                            <input type="password" id="login-password" name="login-password" required aria-required="true" placeholder="رمز عبور شما">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="remember-me" name="remember-me">
+                            <label for="remember-me" class="checkbox-label">مرا به خاطر بسپار</label>
+                        </div>
+                        <!-- project_root/login.html -->
+<!-- ... (ادامه از کامنت قبلی) ... -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">ورود</button>
+                        </div>
+                         <div class="form-group">
+                            <a href="#" id="forgot-password-link">رمز عبور خود را فراموش کرده‌اید؟</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- فرم ثبت نام -->
+                <div class="register-form">
+                    <h2>ثبت نام</h2>
+                    <form action="register.php" method="POST" id="register-form">
+                        <div class="form-group">
+                            <label for="register-name">نام و نام خانوادگی:</label>
+                            <input type="text" id="register-name" name="register-name" required aria-required="true" placeholder="نام شما">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">ایمیل:</label>
+                            <input type="email" id="register-email" name="register-email" required aria-required="true" placeholder="ایمیل شما">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-mobile">شماره موبایل (اختیاری):</label>
+                            <input type="tel" id="register-mobile" name="register-mobile" placeholder="09xxxxxxxxx">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">رمز عبور:</label>
+                            <input type="password" id="register-password" name="register-password" required aria-required="true" placeholder="رمز عبور">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password-confirm">تکرار رمز عبور:</label>
+                            <input type="password" id="register-password-confirm" name="register-password-confirm" required aria-required="true" placeholder="تکرار رمز عبور">
+                        </div>
+                        <div class="form-group">
+                          <label for="referrer-code">کد معرف (اختیاری):</label>
+                          <input type="text" id="referrer-code" name="referrer-code" placeholder="کد معرف">
+                      </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">ثبت نام</button>
+                        </div>
+                    </form>
+                      <div class="form-group social-login">
+                        <h3>ورود با حساب‌های اجتماعی</h3>
+                        <a href="#" class="social-login-btn" aria-label="ورود با گوگل"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-login-btn" aria-label="ورود با توییتر"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+          <p><i class="fas fa-copyright"></i> تمامی حقوق محفوظ است.</p>
+          <div class="social-links">
+            <a href="#" title="توییتر" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="اینستاگرام" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="فیسبوک" aria-label="فیسبوک"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/login-register.js"></script>
+</body>
+</html>
